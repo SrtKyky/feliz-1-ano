@@ -6,25 +6,17 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
-
     margin: 0;
-
     min-height: 100vh;
-
     font-family: Arial, sans-serif;
-
     background-color: #f8e8ee;
-
     overflow-x: hidden;
 }
-
 
 
 /* =========================================
@@ -32,21 +24,15 @@ body {
 ========================================= */
 
 .container {
-
     width: 100%;
-
     min-height: 100vh;
 
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 }
 
-
 .card {
-
     width: 350px;
 
     padding: 40px;
@@ -64,9 +50,7 @@ body {
         cardAppear 0.8s ease;
 }
 
-
 .card h1 {
-
     margin-top: 0;
 
     font-size: 32px;
@@ -74,9 +58,7 @@ body {
     color: #6d3f48;
 }
 
-
 .card p {
-
     font-size: 16px;
 
     line-height: 1.6;
@@ -87,13 +69,11 @@ body {
 }
 
 
-
 /* =========================================
    BOTÕES
 ========================================= */
 
 .buttons {
-
     display: flex;
 
     justify-content: center;
@@ -101,9 +81,7 @@ body {
     gap: 15px;
 }
 
-
 button {
-
     padding: 12px 25px;
 
     border: none;
@@ -123,15 +101,11 @@ button {
         background-color 0.2s ease;
 }
 
-
 button:hover {
-
     transform: scale(1.05);
 }
 
-
 #noButton {
-
     background-color: #b8b8b8;
 
     min-width: 80px;
@@ -144,13 +118,11 @@ button:hover {
 }
 
 
-
 /* =========================================
    TELA DA CARTA
 ========================================= */
 
 #letterScreen {
-
     position: relative;
 
     display: none;
@@ -160,7 +132,6 @@ button:hover {
     width: 100%;
 
     justify-content: center;
-
     align-items: center;
 
     padding: 80px 20px;
@@ -170,9 +141,7 @@ button:hover {
     overflow: hidden;
 }
 
-
 #letterScreen.show {
-
     display: flex;
 
     animation:
@@ -180,30 +149,27 @@ button:hover {
 }
 
 
-
 /* =========================================
    PLAYER DE MÚSICA
 ========================================= */
 
 .musicPlayer {
-
     position: fixed;
 
     top: 20px;
-
     right: 20px;
 
     z-index: 20;
 
     display: flex;
-
     align-items: center;
 
     gap: 12px;
 
     padding: 10px 12px 10px 10px;
 
-    background-color: rgba(255, 255, 255, 0.94);
+    background-color:
+        rgba(255, 255, 255, 0.94);
 
     border-radius: 50px;
 
@@ -214,14 +180,13 @@ button:hover {
 
     opacity: 0;
 
-    transform: translateY(-15px);
+    transform:
+        translateY(-15px);
 
     pointer-events: none;
 }
 
-
 #letterScreen.show .musicPlayer {
-
     animation:
         musicPlayerAppear 0.8s ease forwards;
 
@@ -231,19 +196,16 @@ button:hover {
 }
 
 
-
 /* =========================================
    VINIL
 ========================================= */
 
 .vinyl {
-
     position: relative;
 
     flex-shrink: 0;
 
     width: 65px;
-
     height: 65px;
 
     padding: 4px;
@@ -266,11 +228,8 @@ button:hover {
         vinylSpin 6s linear infinite;
 }
 
-
 .vinyl img {
-
     width: 100%;
-
     height: 100%;
 
     border-radius: 50%;
@@ -280,17 +239,13 @@ button:hover {
     display: block;
 }
 
-
 .vinylCenter {
-
     position: absolute;
 
     width: 12px;
-
     height: 12px;
 
     top: 50%;
-
     left: 50%;
 
     transform:
@@ -305,25 +260,20 @@ button:hover {
 }
 
 
-
 /* =========================================
    INFORMAÇÕES DA MÚSICA
 ========================================= */
 
 .musicInfo {
-
     display: flex;
 
     flex-direction: column;
 
     min-width: 95px;
-
     max-width: 120px;
 }
 
-
 .musicLabel {
-
     font-size: 9px;
 
     color: #a47c86;
@@ -335,9 +285,7 @@ button:hover {
     margin-bottom: 2px;
 }
 
-
 .musicTitle {
-
     font-size: 14px;
 
     font-weight: bold;
@@ -345,9 +293,7 @@ button:hover {
     color: #6d3f48;
 }
 
-
 .musicStatus {
-
     font-size: 10px;
 
     color: #9b7078;
@@ -356,15 +302,12 @@ button:hover {
 }
 
 
-
 /* =========================================
    BOTÃO DA MÚSICA
 ========================================= */
 
 .musicButton {
-
     width: 36px;
-
     height: 36px;
 
     padding: 0;
@@ -374,7 +317,6 @@ button:hover {
     display: flex;
 
     justify-content: center;
-
     align-items: center;
 
     background-color: #e9a8bd;
@@ -384,14 +326,11 @@ button:hover {
     flex-shrink: 0;
 }
 
-
 .musicButton:hover {
-
     transform: scale(1.08);
 
     background-color: #df91ad;
 }
-
 
 
 /* =========================================
@@ -399,16 +338,12 @@ button:hover {
 ========================================= */
 
 .musicPlayer.paused .vinyl {
-
     animation-play-state: paused;
 }
 
-
 .musicPlayer.paused .musicStatus {
-
     color: #aaa;
 }
-
 
 
 /* =========================================
@@ -416,14 +351,14 @@ button:hover {
 ========================================= */
 
 .letter {
-
     position: relative;
 
     width: min(900px, 95%);
 
     min-height: 650px;
 
-    padding: 50px 65px 65px;
+    padding:
+        50px 65px 65px;
 
     background-color: white;
 
@@ -434,11 +369,11 @@ button:hover {
 
     overflow: hidden;
 
-    transform-origin: center center;
+    transform-origin:
+        center center;
 
     z-index: 2;
 }
-
 
 
 /* =========================================
@@ -446,7 +381,6 @@ button:hover {
 ========================================= */
 
 .date {
-
     text-align: center;
 
     margin: 0 0 12px;
@@ -459,17 +393,14 @@ button:hover {
 }
 
 
-
 /* =========================================
    SOL + LUA
 ========================================= */
 
 .sunMoon {
-
     display: flex;
 
     justify-content: center;
-
     align-items: center;
 
     gap: 18px;
@@ -481,18 +412,14 @@ button:hover {
     font-size: 22px;
 }
 
-
 .sun {
-
     display: inline-block;
 
     animation:
         sunGlow 3s ease-in-out infinite;
 }
 
-
 .moon {
-
     display: inline-block;
 
     color: #8d7fa8;
@@ -501,9 +428,7 @@ button:hover {
         moonGlow 4s ease-in-out infinite;
 }
 
-
 .littleStar {
-
     color: #d9b5c1;
 
     font-size: 12px;
@@ -513,13 +438,11 @@ button:hover {
 }
 
 
-
 /* =========================================
    TÍTULO
 ========================================= */
 
 .letter h1 {
-
     margin: 0 0 38px;
 
     text-align: center;
@@ -533,13 +456,11 @@ button:hover {
 }
 
 
-
 /* =========================================
    TEXTO
 ========================================= */
 
 .letterText {
-
     width: 68%;
 
     color: #59464a;
@@ -552,12 +473,9 @@ button:hover {
         textAppear 1s ease 0.6s both;
 }
 
-
 .letterText p {
-
     margin: 0 0 25px;
 }
-
 
 
 /* =========================================
@@ -565,11 +483,9 @@ button:hover {
 ========================================= */
 
 .couple {
-
     position: absolute;
 
     right: 20px;
-
     bottom: 70px;
 
     width: 220px;
@@ -579,9 +495,7 @@ button:hover {
         coupleFloat 4s ease-in-out 2.2s infinite;
 }
 
-
 .couple img {
-
     display: block;
 
     width: 100%;
@@ -590,13 +504,11 @@ button:hover {
 }
 
 
-
 /* =========================================
    CORAÇÕES
 ========================================= */
 
 .heart {
-
     position: absolute;
 
     color: #e9a8bd;
@@ -607,17 +519,13 @@ button:hover {
         floatingHeart 3s ease-in-out infinite;
 }
 
-
 .heart1 {
-
     top: 100px;
 
     right: 80px;
 }
 
-
 .heart2 {
-
     top: 180px;
 
     left: 45px;
@@ -626,13 +534,11 @@ button:hover {
 }
 
 
-
 /* =========================================
    ESTRELAS
 ========================================= */
 
 .sparkle {
-
     position: absolute;
 
     color: #e9a8bd;
@@ -643,17 +549,13 @@ button:hover {
         sparkle 2s ease-in-out infinite;
 }
 
-
 .sparkle1 {
-
     top: 45px;
 
     left: 45px;
 }
 
-
 .sparkle2 {
-
     right: 45px;
 
     top: 55px;
@@ -662,13 +564,11 @@ button:hover {
 }
 
 
-
 /* =========================================
    FINAL DA CARTA
 ========================================= */
 
 .letterEnding {
-
     width: 68%;
 
     margin-top: 35px;
@@ -681,9 +581,7 @@ button:hover {
         textAppear 1s ease 1s both;
 }
 
-
 .letterEnding p {
-
     margin: 8px 0;
 
     color: #9b7078;
@@ -691,23 +589,17 @@ button:hover {
     font-size: 17px;
 }
 
-
 #likedButton {
-
     margin-top: 15px;
 
     background-color: #e9a8bd;
 }
 
-
 #likedButton:hover {
-
     background-color: #df91ad;
 }
 
-
 #likedButton:disabled {
-
     cursor: default;
 
     opacity: 0.8;
@@ -716,13 +608,11 @@ button:hover {
 }
 
 
-
 /* =========================================
    SOL + LUA DO RODAPÉ
 ========================================= */
 
 .bottomSymbols {
-
     position: absolute;
 
     bottom: 18px;
@@ -743,18 +633,14 @@ button:hover {
     color: #c9a4ae;
 }
 
-
 .sunSmall {
-
     color: #c9953d;
 
     animation:
         sunGlow 3s ease-in-out infinite;
 }
 
-
 .moonSmall {
-
     color: #8d7fa8;
 
     animation:
@@ -762,19 +648,16 @@ button:hover {
 }
 
 
-
 /* =========================================
    KIRBY
 ========================================= */
 
 #kirby {
-
     position: absolute;
 
     width: 320px;
 
     left: 50%;
-
     top: 50%;
 
     transform:
@@ -788,9 +671,7 @@ button:hover {
     pointer-events: none;
 }
 
-
 #kirbyImage {
-
     display: block;
 
     width: 100%;
@@ -799,12 +680,24 @@ button:hover {
 }
 
 
-#letterScreen.kirbyShow #kirby {
+/* =========================================
+   APARECIMENTO DO KIRBY
+========================================= */
 
+#letterScreen.kirbyShow #kirby {
     animation:
         kirbyAppear 1s ease forwards;
 }
 
+
+/* =========================================
+   SEGUNDO KIRBY
+========================================= */
+
+#letterScreen.kirbyFinished #kirbyImage {
+    animation:
+        cuteKirbyAppear 0.6s ease;
+}
 
 
 /* =========================================
@@ -812,10 +705,9 @@ button:hover {
 ========================================= */
 
 #kirbySpeech {
-
     position: absolute;
 
-    top: -60px;
+    top: -75px;
 
     left: 50%;
 
@@ -846,13 +738,10 @@ button:hover {
     opacity: 0;
 }
 
-
 #letterScreen.kirbyFinished #kirbySpeech {
-
     animation:
         speechAppear 0.8s ease forwards;
 }
-
 
 
 /* =========================================
@@ -860,20 +749,16 @@ button:hover {
 ========================================= */
 
 #letterScreen.devouring .letter {
-
     animation:
         devourLetter 1.8s
         cubic-bezier(0.65, 0, 0.35, 1)
         forwards;
 }
 
-
 #letterScreen.devouring .musicPlayer {
-
     animation:
         musicPlayerDisappear 1s ease forwards;
 }
-
 
 
 /* =========================================
@@ -883,23 +768,19 @@ button:hover {
 @keyframes cardAppear {
 
     from {
-
         opacity: 0;
 
         transform:
             translateY(20px)
             scale(0.97);
-
     }
 
     to {
-
         opacity: 1;
 
         transform:
             translateY(0)
             scale(1);
-
     }
 
 }
@@ -908,21 +789,17 @@ button:hover {
 @keyframes musicPlayerAppear {
 
     from {
-
         opacity: 0;
 
         transform:
             translateY(-15px);
-
     }
 
     to {
-
         opacity: 1;
 
         transform:
             translateY(0);
-
     }
 
 }
@@ -931,23 +808,19 @@ button:hover {
 @keyframes musicPlayerDisappear {
 
     from {
-
         opacity: 1;
 
         transform:
             translateY(0)
             scale(1);
-
     }
 
     to {
-
         opacity: 0;
 
         transform:
             translateY(0)
             scale(0.5);
-
     }
 
 }
@@ -956,17 +829,13 @@ button:hover {
 @keyframes vinylSpin {
 
     from {
-
         transform:
             rotate(0deg);
-
     }
 
     to {
-
         transform:
             rotate(360deg);
-
     }
 
 }
@@ -975,21 +844,17 @@ button:hover {
 @keyframes screenAppear {
 
     from {
-
         opacity: 0;
 
         transform:
             scale(0.97);
-
     }
 
     to {
-
         opacity: 1;
 
         transform:
             scale(1);
-
     }
 
 }
@@ -998,21 +863,17 @@ button:hover {
 @keyframes titleAppear {
 
     from {
-
         opacity: 0;
 
         transform:
             translateY(15px);
-
     }
 
     to {
-
         opacity: 1;
 
         transform:
             translateY(0);
-
     }
 
 }
@@ -1021,21 +882,17 @@ button:hover {
 @keyframes textAppear {
 
     from {
-
         opacity: 0;
 
         transform:
             translateY(20px);
-
     }
 
     to {
-
         opacity: 1;
 
         transform:
             translateY(0);
-
     }
 
 }
@@ -1044,21 +901,17 @@ button:hover {
 @keyframes coupleAppear {
 
     from {
-
         opacity: 0;
 
         transform:
             translateX(50px);
-
     }
 
     to {
-
         opacity: 1;
 
         transform:
             translateX(0);
-
     }
 
 }
@@ -1067,24 +920,18 @@ button:hover {
 @keyframes coupleFloat {
 
     0% {
-
         transform:
             translateY(0);
-
     }
 
     50% {
-
         transform:
             translateY(-6px);
-
     }
 
     100% {
-
         transform:
             translateY(0);
-
     }
 
 }
@@ -1093,30 +940,24 @@ button:hover {
 @keyframes floatingHeart {
 
     0% {
-
         transform:
             translateY(0);
 
         opacity: 0.7;
-
     }
 
     50% {
-
         transform:
             translateY(-8px);
 
         opacity: 1;
-
     }
 
     100% {
-
         transform:
             translateY(0);
 
         opacity: 0.7;
-
     }
 
 }
@@ -1125,30 +966,24 @@ button:hover {
 @keyframes sparkle {
 
     0% {
-
         opacity: 0.3;
 
         transform:
             scale(0.8);
-
     }
 
     50% {
-
         opacity: 1;
 
         transform:
             scale(1.2);
-
     }
 
     100% {
-
         opacity: 0.3;
 
         transform:
             scale(0.8);
-
     }
 
 }
@@ -1157,30 +992,24 @@ button:hover {
 @keyframes sunGlow {
 
     0% {
-
         transform:
             scale(1);
 
         opacity: 0.8;
-
     }
 
     50% {
-
         transform:
             scale(1.12);
 
         opacity: 1;
-
     }
 
     100% {
-
         transform:
             scale(1);
 
         opacity: 0.8;
-
     }
 
 }
@@ -1189,143 +1018,158 @@ button:hover {
 @keyframes moonGlow {
 
     0% {
-
         transform:
             scale(1);
 
         opacity: 0.7;
-
     }
 
     50% {
-
         transform:
             scale(1.08);
 
         opacity: 1;
-
     }
 
     100% {
-
         transform:
             scale(1);
 
         opacity: 0.7;
-
     }
 
 }
 
 
+/* =========================================
+   KIRBY APARECENDO
+========================================= */
+
 @keyframes kirbyAppear {
 
     0% {
-
         opacity: 0;
 
         transform:
             translate(-50%, -50%)
             scale(0.7);
-
     }
 
     100% {
-
         opacity: 1;
 
         transform:
             translate(-50%, -50%)
             scale(1);
-
     }
 
 }
 
+
+/* =========================================
+   CARTA SENDO DEVORADA
+========================================= */
 
 @keyframes devourLetter {
 
     0% {
-
         transform:
             scale(1);
 
         opacity: 1;
-
     }
 
     30% {
-
         transform:
             scale(0.82);
 
         opacity: 1;
-
     }
 
     55% {
-
         transform:
             scale(0.55);
 
         opacity: 0.95;
-
     }
 
     75% {
-
         transform:
             scale(0.30);
 
         opacity: 0.75;
-
     }
 
     90% {
-
         transform:
             scale(0.08);
 
         opacity: 0.3;
-
     }
 
     100% {
-
         transform:
             scale(0);
 
         opacity: 0;
-
     }
 
 }
 
 
+/* =========================================
+   KIRBY FOFO APARECENDO
+========================================= */
+
+@keyframes cuteKirbyAppear {
+
+    0% {
+        opacity: 0;
+
+        transform:
+            scale(0.8);
+    }
+
+    60% {
+        opacity: 1;
+
+        transform:
+            scale(1.08);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform:
+            scale(1);
+    }
+
+}
+
+
+/* =========================================
+   BALÃO APARECENDO
+========================================= */
+
 @keyframes speechAppear {
 
     from {
-
         opacity: 0;
 
         transform:
             translateX(-50%)
             translateY(10px);
-
     }
 
     to {
-
         opacity: 1;
 
         transform:
             translateX(-50%)
             translateY(0);
-
     }
 
 }
-
 
 
 /* =========================================
@@ -1335,7 +1179,6 @@ button:hover {
 @media (max-width: 700px) {
 
     #letterScreen {
-
         padding:
             90px 12px 40px;
 
@@ -1344,7 +1187,6 @@ button:hover {
 
 
     .letter {
-
         width: 100%;
 
         padding:
@@ -1357,7 +1199,6 @@ button:hover {
 
 
     .letter h1 {
-
         font-size: 27px;
 
         margin-bottom: 30px;
@@ -1365,7 +1206,6 @@ button:hover {
 
 
     .date {
-
         font-size: 12px;
 
         letter-spacing: 2px;
@@ -1373,7 +1213,6 @@ button:hover {
 
 
     .letterText {
-
         width: 100%;
 
         font-size: 16px;
@@ -1383,13 +1222,11 @@ button:hover {
 
 
     .letterText p {
-
         margin-bottom: 22px;
     }
 
 
     .letterEnding {
-
         width: 100%;
 
         margin-top: 30px;
@@ -1399,7 +1236,6 @@ button:hover {
 
 
     .couple {
-
         width: 190px;
 
         right: 50%;
@@ -1412,7 +1248,6 @@ button:hover {
 
 
     .heart1 {
-
         top: 90px;
 
         right: 30px;
@@ -1420,7 +1255,6 @@ button:hover {
 
 
     .heart2 {
-
         top: 160px;
 
         left: 25px;
@@ -1428,7 +1262,6 @@ button:hover {
 
 
     .sparkle1 {
-
         top: 35px;
 
         left: 25px;
@@ -1436,7 +1269,6 @@ button:hover {
 
 
     .sparkle2 {
-
         right: 25px;
 
         top: 45px;
@@ -1444,23 +1276,21 @@ button:hover {
 
 
     #kirby {
-
         width: 240px;
     }
 
 
     #kirbySpeech {
-
         max-width: 300px;
 
         font-size: 15px;
 
-        padding: 10px 16px;
+        padding:
+            10px 16px;
     }
 
 
     .musicPlayer {
-
         top: 10px;
 
         right: 10px;
@@ -1473,7 +1303,6 @@ button:hover {
 
 
     .vinyl {
-
         width: 52px;
 
         height: 52px;
@@ -1481,7 +1310,6 @@ button:hover {
 
 
     .musicInfo {
-
         min-width: 75px;
 
         max-width: 85px;
@@ -1489,19 +1317,16 @@ button:hover {
 
 
     .musicTitle {
-
         font-size: 12px;
     }
 
 
     .musicStatus {
-
         font-size: 9px;
     }
 
 
     .musicButton {
-
         width: 32px;
 
         height: 32px;
